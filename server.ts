@@ -14,7 +14,7 @@ app.use(express.json());
 // production build 
 if (process.env.NODE_ENV === 'production') {
   // serve static content 
-  // app.use(express.static(path.join(__dirname, )))
+  app.use(express.static(path.join(__dirname, '/dist')))
 }
 
 /**
